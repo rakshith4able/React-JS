@@ -1,0 +1,15 @@
+-JSX --> Javascript Syntax Extension (or) Javascript + XML
+
+-JSX allows us to type HTML looking code directly in JS and its totally valid
+
+-Basically it allows us to combine UI with our Javascript logic directly in our javascript file
+
+-To convert those HTML code into JS code the Babel is doing tons of jobs behind the scene
+
+-JSX isn't legal Javascript and it has to be transpiled to Javascript
+
+-JSX is more strict than HTML, Elements must either
+1)Have an explicit closing tag: <b> ..... </b>
+2)Be explicitly self closed: <input name="msg" />
+
+-

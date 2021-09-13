@@ -25,3 +25,7 @@ ReactDOM.render(<MultipleHellos />, document.getElementById('root'));
 //First param is < /> containing component name in middle
 //Second paramenter is the target where we want to use the component
 
+//DIFFERENCE BW CLASS AND FUNCTION COMPONENT
+//BOTH CAN USE PROPS AND RENDER CONTENT
+//HISTORICALLY FUNCTION COMPONENTS COULDN'T USE FEATURES LIKE STATE AND LIFECYCLE METHODS
+//WITH THE INTRODUCTION OF HOOKS, WE CAN NOW WRITE FULL-FEATURED FUNCTION COMPONENTS
