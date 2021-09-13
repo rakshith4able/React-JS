@@ -1,0 +1,6 @@
+1) In the real applications we make use of multiple components
+2) Each components are named as componentname.js and should not include reactDOM.render()
+3) index.js consists of App component which is the only component to be rendered
+4) App component will have other components inside it
+5) In the index.html the individual components other than App component must be 
+   included in script tag with type text/jsx 
