@@ -1,0 +1,10 @@
+To use create react app we can do in 2 ways
+
+1) Install Node JS
+2) npm install -g create-react-app(only once)
+3) create-react-app my_app_name
+
+
+1)npx create-react-app my-app
+2)cd my-app
+3)npm start
