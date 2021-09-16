@@ -1,4 +1,4 @@
-To use create react app we can do in 2 ways
+To use create react app(CRA) we can do in 2 ways
 
 1) Install Node JS
 2) npm install -g create-react-app(only once)
@@ -8,3 +8,11 @@ To use create react app we can do in 2 ways
 1)npx create-react-app my-app
 2)cd my-app
 3)npm start
+
+
+To start react server -  npm start
+
+To stop rect server - ctrl+c
+
+CRA is built on top of webpack- a JS untility
+

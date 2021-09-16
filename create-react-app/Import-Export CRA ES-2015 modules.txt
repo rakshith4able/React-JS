@@ -1,0 +1,36 @@
+Import-Export - is the way of sharing code,functions,objects,classes etc bw JS files
+
+The syntax create react app uses is through ES2015 modules
+
+//Consider a file has many functions say 3 for example.
+1)helpful
+2)sort
+3)sing
+
+1)If we want to export helpful by default . then
+
+export default helpful;
+
+To import that in another file we specify.
+
+import anyname from './helpful';
+
+//if we do not specify ./ and only specify name it checks for module with fiven name in node folder
+
+
+2)If we want to export multiple things
+
+export {helpful,sort,sing};
+
+to import this
+
+import {helpful,sort,sing} from './helpful';
+
+3)If we want to import default export as well as specific methods exports
+
+export default helpful;
+export {sort,sing};
+
+to import this
+
+import helpful,{sort,sing} from './helpful';
