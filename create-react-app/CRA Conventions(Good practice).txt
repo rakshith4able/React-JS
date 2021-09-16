@@ -1,0 +1,16 @@
+1)There should be only one react component in one JS file.
+ name of the file shold match the component name
+//Our JS files goes in src folder//
+Example 
+1.src/Car.js for Car component
+2.src/House.js for house Component
+
+2)Components extends Component(imported from React)
+
+3)Export each components as default object.
+so we import Component from react in each Component JS file as
+
+import React,{Component} from 'react';
+
+4)Skeleton assumes  top object is App in App.js
+best to keep this
