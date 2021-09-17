@@ -14,3 +14,10 @@ import React,{Component} from 'react';
 
 4)Skeleton assumes  top object is App in App.js
 best to keep this
+
+5)CSS files for each component should be named as componentName.css
+ and the root div element should have className="ComponentName"
+and further element class should follow the convention os componentName-classname.
+
+We import CSS by 
+import './filename.css';
