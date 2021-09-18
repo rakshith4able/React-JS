@@ -1,0 +1,24 @@
+- State is something that constantly changes in response to events
+
+- 2 types of things that states can track of:
+
+1)UI Logic- The changing state of interface. Eg. There is a modal open right now because I am editing my profile.
+
+2)Business Logic- The changing state of data . Eg. In inbox the message is read or unread and this affects how they are displayed.
+
+- State is internal data specific to the component and that data changes over time.
+
+- State is an instance attribute on a component
+
+- State should be initialized as soon as the component is created. So we set it in constructor function. 
+
+class ClickCount extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            //values you want to track
+            numClicks:0 //start at 0 clicks
+        };
+    }
+}
+
