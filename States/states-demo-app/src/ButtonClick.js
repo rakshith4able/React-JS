@@ -20,10 +20,6 @@ class ButtonClick extends Component {
             <button onClick={this.makeClick}>Click Me</button>
         </div>);
     }
-
-
-
-
 }
 
 export default ButtonClick;
