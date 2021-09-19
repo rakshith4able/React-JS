@@ -40,3 +40,36 @@ class ClickCount extends Component{
 - We should not change state inside the render().
 - State change is asynchronous. That mwans react determines and changes state when its the best time to change
   Because whenever the state changes the component has to re-render.
+
+//Binding Methods
+- While using methods in class to setState we have to bind the method to the class using constructor
+
+
+
+class ButtonClick extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            clicked: false
+        }
+        //Here we are using bind to bind the method to the instance
+        this.makeClick = this.makeClick.bind(this); 
+    }
+
+//This is the method setting state
+    makeClick(e) {
+        this.setState({ clicked: true });
+    }
+
+    render() {
+        return (<div className="ButtonClick">
+            <h2>{this.state.clicked ? 'Clicked' : 'Not Clicked'} </h2>
+            <button onClick={this.makeClick}>Click Me</button>
+        </div>);
+    }
+}
+
+//Alternative Syntax of binding is just using arrow function
+
+makeClick=(e)=>{this.setState({clicked:true})};
