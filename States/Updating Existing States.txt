@@ -1,0 +1,19 @@
+The States can be updated w.r.t existing state value
+
+ this.setState({ property: this.state.property + 1 });//This approach should be avoided 
+//becoz look at the below 3 lines. when then run they wont increase value by 3 instead 
+//since they are similar statements only the last one gets executed.
+
+this.setState({ property: this.state.property + 1 });
+this.setState({ property: this.state.property + 1 });
+this.setState({ property: this.state.property + 1 });
+
+//SO the soultion is passing callbackfunction to setState
+
+syntax: setState((existing)=>{
+    return {property :existing.property+1;}
+});
+
+ this.setState((curState) => {
+            return { score: curState.score + 1 }
+        });
