@@ -1,0 +1,5 @@
+-We do not directle access the arrayand make changes inside it.
+Even though its easy and logical. Its not react way of doing that.
+
+-instead we make use of pure functions(map,filter,reduce and spread operator) and 
+create the new array or object and then  update the state with new.
