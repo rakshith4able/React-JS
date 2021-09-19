@@ -1,5 +1,6 @@
 import Game from './Game';
 import Rando from './Rando';
+import ButtonClick from './ButtonClick';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Game />
       <Rando maxNum="10" />
+      <ButtonClick />
     </div>
   );
 }
