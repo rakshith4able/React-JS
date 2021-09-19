@@ -22,3 +22,21 @@ class ClickCount extends Component{
     }
 }
 
+//Alternate Syntax- doesnt use constructor in fact Babel converts to the same above form
+
+class ClickCount extends Component{
+            this.state={
+            //values you want to track
+            numClicks:0 //start at 0 clicks
+        };
+    }
+
+//Changing State
+
+- this.setState() is built in  react method of changing a component's state. 
+- we pass an object consisting of property/ies as argument to this.setState()
+- It changes the only passed values not others in this.state object
+- We should not change state inside the constructor.
+- We should not change state inside the render().
+- State change is asynchronous. That mwans react determines and changes state when its the best time to change
+  Because whenever the state changes the component has to re-render.
