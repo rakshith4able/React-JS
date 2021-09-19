@@ -1,0 +1,14 @@
+//Minimizing state
+
+1)We should include as less data possible in state.
+
+2)If something will never change, then do not include in state.
+
+3)If we can derive something from existing props or state then do not include that in state.
+
+//Designing state as downward dataflow
+
+1) Parents should be more stateful than children
+
+2)It will make easy for debugging. Because the state is centralised. Its easier to predict where to find state.
+- Is the current component stateless? Find out what is rendering it. There's the state.
