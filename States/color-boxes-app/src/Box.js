@@ -3,7 +3,7 @@ import { choice } from './Helpers';
 import './Box.css';
 class Box extends Component {
     static defaultProps = {
-        Colors: ["purple", "magenta", "lilac", "pink"]
+
     };
 
     constructor(props) {
