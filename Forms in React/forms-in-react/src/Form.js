@@ -22,10 +22,14 @@ class Form extends Component {
 
 
     render() {
-        return (<form onSubmit={this.handleSubmit}>
-            <input type="text" value={this.state.username} onChange={this.handleChange} />
-            <button>Submit</button>
-        </form>);
+        return (
+            <div className="Form">
+                <h2>Form Input</h2>
+                <form onSubmit={this.handleSubmit}>
+                    <input type="text" value={this.state.username} onChange={this.handleChange} />
+                    <button>Submit</button>
+                </form>
+            </div>);
     }
 }
 

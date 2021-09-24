@@ -1,0 +1,21 @@
+1)We dont specify handlers for multiple inputs as one for each
+
+2)Instead we use computed property names.
+i.e,
+
+let microchip=143;
+let catData={
+[microchip]:"Blue Steele" //Same as 143:"Blue Steele" => [microchip] in object is converted into ints value
+}
+
+3)Using Computed property names we can use only one onChange handler for multiple inputs
+
+4) We do this by including name attribute in inputs with value same as in state and set onChange of all 
+methods to same handleChange method.
+
+and add Computer property names in handleChange method
+
+handleChange(evt)
+{
+     this.setState({[evt.target.name]:evt.target.value})
+}
