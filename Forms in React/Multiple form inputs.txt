@@ -19,3 +19,5 @@ handleChange(evt)
 {
      this.setState({[evt.target.name]:evt.target.value})
 }
+
+NOTE: In react forms the label tag should not use for attribute Instead should use htmlFor attribute
