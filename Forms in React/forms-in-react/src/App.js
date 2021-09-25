@@ -1,5 +1,6 @@
 import Form from './Form';
 import MultipleFormInputs from './MultipleFormInputs';
+import ShoppingList from './ShoppingList';
 import './App.css';
 
 function App() {
@@ -7,8 +8,10 @@ function App() {
     <div className="App">
       <Form />
       <MultipleFormInputs />
+      <ShoppingList />
     </div>
   );
+
 }
 
 export default App;
