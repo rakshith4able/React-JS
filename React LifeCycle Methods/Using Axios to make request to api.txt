@@ -1,0 +1,17 @@
+1)Install axios
+
+npm install axios 
+
+2)Import axios 
+
+import axios from 'axios';
+
+3) use axios 
+
+axios.get('url');
+
+use .then().catch () to handle prommises
+
+or using async functions and await
+
+//In the ZenQuote Component we have made use of axios

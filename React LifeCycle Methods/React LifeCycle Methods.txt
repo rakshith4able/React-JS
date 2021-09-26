@@ -1,0 +1,35 @@
+There are 3 react life cycle methods:
+1)componentDidMount();
+2)ComponentDidUpdate();
+3)ComponentDidUnmount();
+
+The normal flow of react is whenever we add a component to render 
+1) First the control goes to Constructor
+2) Second the controls goes to render()
+3) Then React shows the component on the screen that means the component is now mounted.
+
+
+
+1)componentDidMount()
+
+- This is executed when after constructor() and render() but only once
+- We place the fetching information code in this methods
+- The code may be to fetch data from api or to set state of the component
+- Even though setting state inside the constructor words it is not the best approach
+
+2)componentDidUpdate()
+
+-This is executed after mounting
+- when state or props are changed the render is called again and after updating the content this is called 
+-This method is used to have code that does some side effect operations like storing data to localstorage,
+autosaving and updating DOM for uncontrolled components.
+
+-This lifecycle method can take two parameters the first one will be used to get previous props (before updating)
+and next one is previous states( before updating).
+
+//demonstrated in ZenQuote Component
+
+3)ComponentDidUnmount()
+
+-This is executed when the component is removed.
+-This may be used to clear resourses after the element is removed.
