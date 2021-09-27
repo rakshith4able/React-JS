@@ -1,0 +1,25 @@
+.Joke
+{
+    display: flex;
+    border-bottom: 2px solid #eee;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+.Joke-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.Joke-text
+{
+    width: 75%;
+}
+
+.fa-arrow-down, .fa-arrow-up{
+    margin:10px;
+}

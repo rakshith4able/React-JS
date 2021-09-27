@@ -1,0 +1,17 @@
+1)If we want some information to persist even whe we refresh the page we make use of localStorage property of window object
+
+window.localStorage.setItem('key','value');
+
+//This only accepts string data so we can make used of JSON.stringify(JSON) to convert to string
+
+2)TO get Item from local storage. 
+
+window.localStorage.getItem('key');
+
+3)To Clear the localStorage
+
+window.localStorage.clear();
+
+4)To Parse string data from localStorage into JSON
+
+JSON.parse(window.localStorage.getItem('key'));
