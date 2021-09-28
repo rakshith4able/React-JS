@@ -1,0 +1,11 @@
+.Navbar
+{
+    display: flex;
+    background-color: crimson;
+    color: grey;
+    justify-content: space-around;
+}
+
+.Navbar a.Navbar-active{
+    color:white;
+}
