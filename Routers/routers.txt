@@ -1,0 +1,23 @@
+- Routers are used for client side routing.
+
+- i.e, changing the content(components to display ) in page without actually refreshing the page.
+
+- We can achieve the same outcome by using  conditionals and render the component we need. But
+thats not feasible approach. the pages cant have their own link we cannot track history of pages and so on
+
+- Routers are not built in to react. But there are many packages available to use routers.
+
+- We will use react-router-dom
+
+1)Installing react-router-dom
+
+npm install react-router-dom
+
+2)Go to index.js and import {browserRouter} from react-router-dom
+
+3)Go to app.css import {Switch,Route,Link,NavLink} from 'react-router-dom'
+
+<Switch>
+<Route path="/" component={Component_name/>}/>
+<route path="/abc" render={()=>{<Component_name props=value />}}/>
+</Switch>
