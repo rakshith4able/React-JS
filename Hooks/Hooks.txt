@@ -1,0 +1,5 @@
+- Hooks allows us to hook into the inernal working of react
+
+- Benefit is it allows to write code which is is shorter and easier to understand and also reusable
+
+- Hooks allows us to write functions or functional components that has all of the features of class-based components
