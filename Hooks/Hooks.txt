@@ -3,3 +3,7 @@
 - Benefit is it allows to write code which is is shorter and easier to understand and also reusable
 
 - Hooks allows us to write functions or functional components that has all of the features of class-based components
+
+- Eg: useState
+
+- We can define our custom hooks using useState. For Eg: Toggler.js uses useToggle.js custom hook defined in hooks directory.
