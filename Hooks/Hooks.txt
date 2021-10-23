@@ -4,6 +4,29 @@
 
 - Hooks allows us to write functions or functional components that has all of the features of class-based components
 
-- Eg: useState
+- Eg: useState, useEffect
 
-- We can define our custom hooks using useState. For Eg: Toggler.js uses useToggle.js custom hook defined in hooks directory.
+1) useState()
+
+- It is used to manage states in functional components
+- We have to import useState hook from react to use states in the functional component
+- useState() takes a paramenter which is the initial value
+- useState returns an array containing two members 1st one is the value of the state being referenced and 
+- second one is the method to update the state value
+
+- We can define our custom hooks using useState. For Eg: Toggler.js uses useToggle.js custom hook 
+  defined in hooks directory.
+- We can also define custom hooks to manage form input state
+
+2)useEffect()
+
+- It provides access to react lifecycle methods like componentDidMount(), componentDidUpdate(),
+ componentWillUnmount() in functional components.
+
+- useEffect by default runs both on first render and after every update.
+  Instead of thinking it as running after mounting and updating we can think it as after render.
+
+- Clicker.js demonstrates usage of useEffect()
+
+-useEffect takes one parameter which is a function to execute on every render
+ 

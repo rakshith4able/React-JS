@@ -3,16 +3,17 @@ import CounterHooks from './CounterHooks';
 import SimpleFormClass from './SimpleFormClass';
 import SimpleFormHooks from './SimpleFormHooks';
 import Toggler from './Toggler';
-import './App.css';
+import Clicker from './Clicker';
 
 function App() {
   return (
     <div className="App">
-      <CoounterClass />
+      {/* <CoounterClass />
       <CounterHooks />
       <Toggler />
       <SimpleFormClass />
-      <SimpleFormHooks />
+      <SimpleFormHooks /> */}
+      <Clicker />
     </div>
   );
 }
