@@ -28,5 +28,12 @@
 
 - Clicker.js demonstrates usage of useEffect()
 
--useEffect takes one parameter which is a function to execute on every render
+- useEffect takes one parameter which is a function to execute on every render
+
+- SWMovies.js demonstrates using useEffect() to make request to Star Wars API
+
+- We have to use different format in useEffect to write async functions.
+
+- We can give an array of variables as second arguement to useEffect which triggers useEffect only
+ when the variables present in array changes.
  
