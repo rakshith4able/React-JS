@@ -1,6 +1,7 @@
-
 import CoounterClass from './CounterClass';
 import CounterHooks from './CounterHooks';
+import SimpleFormClass from './SimpleFormClass';
+import SimpleFormHooks from './SimpleFormHooks';
 import Toggler from './Toggler';
 import './App.css';
 
@@ -10,6 +11,8 @@ function App() {
       <CoounterClass />
       <CounterHooks />
       <Toggler />
+      <SimpleFormClass />
+      <SimpleFormHooks />
     </div>
   );
 }
