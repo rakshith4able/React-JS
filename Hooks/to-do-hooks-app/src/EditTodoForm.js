@@ -11,8 +11,8 @@ function EditTodoForm({ editTodo, id, task, toggleIsEditing }) {
             editTodo(id, value);
             reset();
             toggleIsEditing();
-        }}>
-            <TextField margin='normal' value={value} onChange={handleChange} fullWidth />
+        }} style={{ marginLeft: "1rem", width: "500%" }} >
+            <TextField margin='normal' value={value} onChange={handleChange} fullWidth autoFocus />
         </form>);
 }
 
