@@ -9,7 +9,7 @@ import Switch from "@material-ui/core/Switch";
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles/NavBarStyles";
 import { ThemeContext } from './contexts/ThemeContext';
-
+import { LanguageContext, withLanguageContext } from "./contexts/LanguageContext";
 class Navbar extends Component {
   static contextType = ThemeContext;
 
@@ -21,7 +21,8 @@ class Navbar extends Component {
         <AppBar position='static' color={isDarkMode ? 'default' : 'primary'}>
           <Toolbar>
             <IconButton className={classes.menuButton} color='inherit'>
-              <span>🇫🇷</span>
+              <span>{this.props.languageContext.language}</span>
+
             </IconButton>
             <Typography className={classes.title} variant='h6' color='inherit'>
               App Title
@@ -46,4 +47,4 @@ class Navbar extends Component {
     );
   }
 }
-export default withStyles(styles)(Navbar);
+export default withLanguageContext(withStyles(styles)(Navbar));
