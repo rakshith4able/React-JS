@@ -14,21 +14,31 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import withStyles from "@material-ui/core/styles/withStyles";
 import styles from "./styles/FormStyles";
+import { LanguageContext } from "./contexts/LanguageContext";
 
 class Form extends Component {
+
+  static contextType = LanguageContext;
+
   render() {
     const { classes } = this.props;
+    const { language, changeLanguage } = this.context;
+    const words = {
+      english: { hello: "Hello!" },
+      kannada: { hello: "Namaskara!" },
+    }
+    const { hello } = words[language];
+
     return (
       <main className={classes.main}>
         <Paper className={classes.paper}>
           <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography variant='h5'>Sign In</Typography>
-          <Select value='english'>
+          <Typography variant='h5'>{hello}</Typography>
+          <Select value={language} onChange={changeLanguage}>
             <MenuItem value='english'>English</MenuItem>
-            <MenuItem value='french'>French</MenuItem>
-            <MenuItem value='spanish'>Spanish</MenuItem>
+            <MenuItem value='kannada'>Kannada</MenuItem>
           </Select>
           <form className={classes.form}>
             <FormControl margin='normal' required fullWidth>
