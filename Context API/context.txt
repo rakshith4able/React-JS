@@ -1,0 +1,7 @@
+- Context allows child(nested ) components to access state or methods or data stored in higher order component 
+without passing them down as props at each level many times.
+
+- createContext() is used to define new context
+
+- Every context comes with Provider React component that allows consuming components to subscribe to the context changes.
+
